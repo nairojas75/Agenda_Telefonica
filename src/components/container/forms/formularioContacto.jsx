@@ -26,20 +26,21 @@ const FormularioContacto = ({ agregar }) => {
     }
 
     return (
-        <form onSubmit={agregarContacto} className='d-flex justify-content align-items-center mb-4'>
-            <div className='form-outline flex-fill'>
-                <input ref={nombreRef} id='inputNombre' type='text' className='form-control-lg' required autofocus placeholder='Nombre del contacto'></input>
+        <form onSubmit={agregarContacto} className='d-flex justify-content-center align-items-center mb-4'>
+            <div className='form-outline flex-fill pm-2'>
+                <input ref={nombreRef} id='inputNombre' type='text' className='form-control-lg' required autoFocus placeholder='Nombre del contacto'></input>
                 <input ref={apellidoRef} id='inputApellido' type='text' className='form-control-lg' required placeholder='Apellido del contacto'></input>
                 <input ref={telefonoRef} id='inputTelefono' type='text' className='form-control-lg' required placeholder='Teléfono del contacto'></input>
-                <label htmlFor='selectEstado' className='sr-only'>Estado</label>
-                <select ref={estadoRef} defaultValue={ESTADO.CONECTADO} id='selectEstado'>
+                <label htmlFor='selectEstado' className='sr-only-only m-2'>Estado</label>
+                <select ref={estadoRef} defaultValue={ESTADO.CONECTADO} id='selectEstado'className='m-3'>
                     <option value={ESTADO.CONECTADO}>Conectado</option>
                     <option value={ESTADO.DESCONECTADO}>Desconectado</option>
                 </select>
             </div>
-            <button type='Submit' className='btn btn-success btn.lg ms-3'>
+            <div className='m-2'><button type='Submit' className='btn btn-success btn-lg ms-3'>
                 Agregar
-            </button>
+            </button></div>
+            
         </form>
     );
 };

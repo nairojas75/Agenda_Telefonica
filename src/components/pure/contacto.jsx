@@ -63,10 +63,10 @@ const ComponenteContacto = ({ contacto, modificar, borrar }) => {
 
   return (
     <tr>
-      <th><span className='m-2'>{contacto.nombre}</span></th>
-      <td><span className='align-center'>{contacto.apellido}</span></td>
+      <th><span className='ms-2'>{contacto.nombre}</span></th>
+      <td><span className='align-middle'>{contacto.apellido}</span></td>
       <td><span className='align-middle'>{contacto.telefono}</span></td>
-      <td className='pm-3'>{contactoEstadoColor()}</td>
+      <td>{contactoEstadoColor()}</td>
       {/* <td className='pm-3'>{modificarContactoIcono()}</td> */}
       <td ><i className='bi-trash puntero' style={{ color: 'tomato' }} onClick={() => borrar(contacto)}></i></td>
     </tr>

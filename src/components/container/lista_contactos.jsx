@@ -51,15 +51,15 @@ const ListaContactos = () => {
             <div className='col-12'>
                 <div className='card'>
                     {/**titulo */}
-                    <div className='card-header p-2'>
-                        <h2>
+                    <div className='card-header p-3'>
+                        <h5>
                             Lista de Contactos
-                        </h2>
+                        </h5>
                     </div>
                     {/**cuerpo-contenido*/}
-                    <div className='card-body' data-mdb-perfect-scrollbar='true' style={{ position: 'relative', height: '400px' }}>
+                    <div className='card-body' data-mdb-perfect-scrollbar='true' style={{ position: 'relative', height: '400' }}>
                         {/**la tabla*/}
-                        <table className='table p-2 table-hover'>
+                        <table className='table table-hover'>
                             <thead>
                                 <tr>
                                     <th scope='col'>Nombre</th>
